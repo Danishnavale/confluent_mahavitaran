@@ -1,0 +1,99 @@
+
+<!--
+Author: Vedant Nandoskar
+Github: https://www.github.com/Vedant1202
+Email: vedant.nandoskar@gmail.com
+Description: HTML for login page of mahavitaran
+-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mahavitaran Login</title>
+    <link rel="icon" href="../resources/img/logo/logo.ico">
+
+    <!-- ========================== CSS LIBRARIES IMPORTS ============================= -->
+    <link rel="stylesheet" href="../css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/libs/font-awesome-4.7.0/css/font-awesome.min.css">
+
+
+    <!-- ========================== CUSTOM CSS IMPORTS ============================= -->
+    <link rel="stylesheet" href="../css/login.css">
+
+
+    <!-- ========================== JS LIBRARIES IMPORTS ============================= -->
+    <script src="../js/libs/jquery.min.js" charset="utf-8"></script>
+    <script src="../js/libs/popper.min.js" charset="utf-8"></script>
+    <script src="../js/libs/bootstrap.min.js" charset="utf-8"></script>
+
+    <!-- ========================== UTILITY FUNCTIONS IMPORT ============================= -->
+    <script src="../js/util.js" charset="utf-8"></script>
+
+    <!-- ========================== CONTROLLER FUNCTIONS IMPORTS ============================= -->
+    <script src="../controller/authenticate/authenticate.js" charset="utf-8"></script>
+
+
+
+
+  </head>
+  <body>
+
+    <!-- MAIN DIV -->
+    <div class="container main shadow-lg rounded">
+
+      <!-- MAHAVITARAN LOGO -->
+      <div class="container">
+        <img src="../resources/img/logo/logo_full.jpg" id="logo" alt="Mahavitaran">
+      </div>
+
+      <!-- FORM -->
+      <div id="loginForm">
+
+        <!-- EMAIL INPUT -->
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email"placeholder="Enter email">
+        </div>
+
+        <!-- PASSWORD INPUT -->
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Password">
+        </div>
+
+        <!-- CHECKBOXES -->
+        <!-- <div class="checkboxDiv">
+          <label class="container-checkbox">Checker
+            <input type="checkbox" class="typeInput" onclick="checkBoxVal(this);" id="checker" value="checker">
+            <span class="checkmark rounded"></span>
+          </label>
+
+          <label class="container-checkbox">Maker
+            <input type="checkbox" class="typeInput" onclick="checkBoxVal(this);" id="maker" value="maker">
+            <span class="checkmark rounded"></span>
+          </label>
+        </div> -->
+
+        <!-- SUBMIT BUTTON -->
+        <div class="submit-btn" align="center">
+          <button class="btn btn-primary" type="submit" id="submit">
+            Login
+            <i class="fa fa-sign-in" aria-hidden="true"></i>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </body>
+
+  <!-- ========================== CUSTOM JS IMPORTS ============================= -->
+  <script src="../js/login.js" charset="utf-8"></script>
+
+</html>
